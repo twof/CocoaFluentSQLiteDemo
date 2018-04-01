@@ -14,6 +14,7 @@
 		2465507E2070DC02007380E7 /* FluentSQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24654FB62070DBF1007380E7 /* FluentSQLite.framework */; };
 		2465507F2070DC02007380E7 /* FluentSQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24654FB62070DBF1007380E7 /* FluentSQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24655084207154FF007380E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24655083207154FF007380E7 /* User.swift */; };
+		2465508620715C10007380E7 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2465508520715C10007380E7 /* DatabaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +226,7 @@
 		24654F602070D460007380E7 /* UISQLiteTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UISQLiteTest.entitlements; sourceTree = "<group>"; };
 		24654F702070DBF0007380E7 /* Dependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dependencies.xcodeproj; path = Dependencies/Dependencies.xcodeproj; sourceTree = "<group>"; };
 		24655083207154FF007380E7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2465508520715C10007380E7 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 				24654F5F2070D460007380E7 /* Info.plist */,
 				24654F602070D460007380E7 /* UISQLiteTest.entitlements */,
 				24655083207154FF007380E7 /* User.swift */,
+				2465508520715C10007380E7 /* DatabaseManager.swift */,
 			);
 			path = UISQLiteTest;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2465508620715C10007380E7 /* DatabaseManager.swift in Sources */,
 				24654F592070D45F007380E7 /* ViewController.swift in Sources */,
 				24654F572070D45F007380E7 /* AppDelegate.swift in Sources */,
 				24655084207154FF007380E7 /* User.swift in Sources */,

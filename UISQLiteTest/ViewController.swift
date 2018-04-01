@@ -16,21 +16,19 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         
         do {
-            let dbPath = "\(NSHomeDirectory())/test.db"
-            let db = try SQLiteDatabase(storage: .file(path: dbPath))
             let jamie = User(id: nil, name: "Jaimie", age: 20)
             
-            _ = db
-                .makeConnection(on: MultiThreadedEventLoopGroup(numThreads: 1).next())
+            try DatabaseManager.sharedConnection()
                 .map { (conn) -> Future<User> in
-                    _ = User.prepare(on: conn)
                     return jamie.save(on: conn).map{ (newUser) -> (User) in
                         print(newUser)
                         return newUser
                     }.catch { (err) in
                         print(err)
                     }
-            }
+                }.catch({ (err) in
+                    print(err)
+                })
         } catch {
             print(error)
         }
